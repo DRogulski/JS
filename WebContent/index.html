@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp" lang="en" ng-controller="GalleryListCtrl">
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/angular.min.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/forms2.js"></script>
+<meta charset="UTF-8">
+<title>Strona główna | Dominik Rogulski</title>
+</head>
+<body>
+	<input ng-model="query">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header" class="container-fluid">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar-collapse-1"
+					aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img
+					src="https://vignette.wikia.nocookie.net/utau/images/4/47/Kaizern_100x100_px.png/revision/latest?cb=20130429010426"
+					alt=”logo”></a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					
+					<li><a href="#drugasekcja">galeria</a></li>
+					<li><a href="#trzeciasekcja">Formularz</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+	</nav>
+	<header>
+		
+
+			<div class=”container”>
+
+				<div id="carouselID" class="carousel slide" data-ride="carousel">
+
+					<ol class="carousel-indicators">
+						<li data-target="#carouselID" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselID" data-slide-to="1"></li>
+						<li data-target="#carouselID" data-slide-to="2"></li>
+						<li data-target="#carouselID" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active center-block">
+							<img
+								src="https://kbdevstorage1.blob.core.windows.net/asset-blobs/19553_en_1"
+								alt="1">
+							<div class="carousel-caption">obrazek pierwszy</div>
+						</div>
+						<div class="item center-block">
+							<img
+								src="https://kbdevstorage1.blob.core.windows.net/asset-blobs/19826_en_1"
+								alt="2">
+							<div class="carousel-caption">obrazek drugi</div>
+						</div>
+						<div class="item center-block">
+							<img
+								src="https://kbdevstorage1.blob.core.windows.net/asset-blobs/19713_en_1"
+								alt="3">
+							<div class="carousel-caption">obrazek trzecie</div>
+						</div>
+						<div class="item center-block">
+							<img
+								src="https://kbdevstorage1.blob.core.windows.net/asset-blobs/19964_en_1"
+								alt="4">
+							<div class="carousel-caption">obrazek czwarty</div>
+						</div>
+
+					</div>
+					<a class="left carousel-control" href="#carouselID" role="button"
+						data-slide="prev"> <span
+						class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Poprzedni</span>
+					</a> <a class="right carousel-control" href="#carouselID" role="button"
+						data-slide="next"> <span
+						class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Następny</span>
+					</a>
+				</div>
+
+			</div>
+	</header>
+<section id=”main-page” class=”jumbotron”>
+	<div class=”container”>
+		<span class="glyphicon glyphicon-forward"></span> HISTORIA PLACKOW
+		
+		<p>Placki ziemniaczane, placki kartoflane – prosta potrawa
+			przygotowywana z ziemniaków, placki smażone na tłuszczu (oleju lub
+			smalcu[1]). Głównymi składnikami są starte na tarce surowe ziemniaki
+			z dodatkiem cebuli (niekiedy składnik ten pomija się, jeśli placki
+			podaje się na słodko[1]), jajek, niewielkiej ilości mąki[1][2][3] i
+			soli. Według niektórych przepisów starte ziemniaki z cebulą zalewa
+			się wrzącym mlekiem[1]. Na Podlasiu dodawana jest odrobina pieprzu i
+			majeranku. Placki ziemniaczane podaje się zaraz po usmażeniu, aby
+			pozostały chrupkie[1]. W wersji na słono podawane mogą być z gulaszem
+			lub z różnego rodzaju sosami, kwaśną śmietaną, pokruszoną bryndzą[2],
+			z gzikiem itd. Na słodko podaje je się z cukrem i śmietaną lub
+			twarogiem, a także z konfiturami, zagotowanymi z cukrem kiszonymi
+			brusznicami[3] (kuchnia białoruska[3]), musem jabłkowym etc.
+
+			Regionalnie w Wielkopolsce, Warmii i Mazurach potrawa ta nosi nazwę
+			plendze (niem. Plinse</p>
+	</div>
+	</section>
+	<section id="drugasekcja">
+		<div class="container">
+			<div id="portfolio-gallery">
+				<div class="row">
+					<p>Photos: {{galleries.length}}</p>
+					<div class="col-sm-4"
+						ng-repeat="gallery in galleries | filter: query | orderBy: orderProp.value">
+						<img src="{{gallery.thumbnailUrl}}">
+						<h3>{{gallery.title}}</h3>
+						<p>
+							<strong>Section </strong>{{gallery.section}}
+						</p>
+						<p>
+							<strong>When: </strong>{{ gallery.when | date: "dd MMMM yyyy" }}
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<label>Sortuj:</label><select ng-model="orderProp"
+						ng-options="sort as sort.label for sort in sortList"
+						class="form-inline">
+						<option value="title">Alfabetycznie</option>
+						<option value="when">Chronologicznie</option>
+					</select>
+					<p ng-if="orderProp">Galerie ułożone: {{orderProp.label}}</p>
+				</div>
+				<div class="col-sm-6">
+					<label>Szukaj: </label><input id="szukaj" class="input"
+						ng-model="query" oninput="checkForm2();"></input>
+					<p id="wyniki">Ilość elementów: {{galleries.length}}</p>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section id="trzeciasekcja" class="padding-top">
+		<form class="form-inline" action="index.html#kontakt" method="post"
+			onsubmit="return checkForm();">
+			<fieldset>
+				<legend>
+					<span class="glyphicon glyphicon-envelope"></span> Formularz
+					kontaktowy
+				</legend>
+
+				<div class="form-group has-feedback" id="formularzImie"
+					data-placement="top" data-content="Należy wpisać imię">
+					<label class="control-label" for="contactName">Imię</label> <input
+						onblur="blurName();" type="text" class="form-control"
+						id="contactName" aria-describedby="contactNameStatus" /> <span
+						id="ikonaImie" class="glyphicon form-control-feedback"
+						aria-hidden="true"></span> <span id="inputSuccessStatus"
+						class="sr-only">(success)</span>
+				</div>
+
+				<div id="formularzEmail" class="form-group has-feedback"
+					data-placement="top"
+					data-content="Należy podać poprawny adres Email">
+					<label class="control-label" for="contactEmail">Email</label>
+					<div class="input-group">
+						<span class="input-group-addon">@</span> <input
+							onblur="blurEmail();" type="text" class="form-control"
+							id="contactEmail" aria-describedby="inputGroupSuccess3Status" />
+					</div>
+					<span id="ikonaEmail" class="glyphicon form-control-feedback"
+						aria-hidden="true"></span> <span id="inputcontactEmail"
+						class="sr-only">(success)</span>
+				</div>
+				<input type="submit" value="Wyślij" /> <br> <br>
+				<div id="formularzKomentarz" class="form-group has-feedback ">
+					<label class="control-label" for="komentarz">Zostaw
+						komentarz:</label>
+					<textarea onblur="blurKomentarz();" class="form-control"
+						id="komentarz" rows="3" data-placement="right"
+						data-content="Należy wpisać komentarz o długośi maksymalnie 250 znaków"></textarea>
+					<span id="ikonaKomentarz" class="glyphicon form-control-feedback"
+						aria-hidden="true"></span>
+				</div>
+			</fieldset>
+		</form>
+	</section>
+
+
+
+
+
+
+	<footer>
+		<div class="container">
+			<a href="#" data-toggle="modal" data-target="#myModal">Polityka
+				prywatności</a>
+			
+		</div>
+	</footer>
+</body>
+</html>

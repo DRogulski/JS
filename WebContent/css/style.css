@@ -1,0 +1,36 @@
+
+body { margin:10px auto; text-align:center; background-color:#080808 }
+
+
+
+.jumbotron {
+	padding-top:-70px;
+	background-color:#000000;}
+	
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover
+	{
+	background-color: #080808;
+	border-color: transparent
+}
+.item{
+	width: 1078px;
+	height 1078px;
+}
+
+
+
+.navbar-brand>img {
+ 	display: block;
+	height: 35px;
+	width: 35px;
+}
+
+	
+}
+
+}
+#logo {
+position: absolute;
+
+
+}
