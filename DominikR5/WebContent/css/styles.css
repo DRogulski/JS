@@ -1,0 +1,43 @@
+@charset "UTF-8";
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 100%;
+    padding: 5px;
+    width: auto;
+}
+
+.logotext {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+
+.answer{
+    text-align: justify;
+    margin-left: 25px;
+    padding: 10px 0 0 25px;
+    background-image: url();
+}
+
+h2{
+    background-image: url(../img/open.png);
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+    color: #3095d3;
+    padding: 10px 0 0 25px;
+    cursor: pointer;
+}
+
+h2.closeClass{
+    background-image: url(../img/close.png);
+    background-repeat: no-repeat;
+    background-position: 0 11px;
+    color: #03588d;
+}
+
+h2:hover{
+    font-weight: bold;
+}

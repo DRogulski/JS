@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Programowanie w JAVASCRIPT - template">
+  <meta name="author" content="dr inż. Jacek Paluszak">
+  <link rel="icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Ranga&amp;subset=latin-ext" rel="stylesheet">
+
+  <title>Programowanie w JAVASCRIPT</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <link href="css/navbar-fixed-top.css" rel="stylesheet">
+  <script src="js/ie-emulation-modes-warning.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logoPWSZ.png" height="40" alt=""></a>
+        <a class="navbar-brand logotext" href="#">PWSZ Lab</a>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#main-page" class="btn btn-primary" title="Strona główna">
+              <span class="glyphicon glyphicon-home"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#projekt1">Projekt 1</a>
+          </li>
+          <li>
+            <a href="#projekt2">Projekt 2</a>
+          </li>
+           <li>
+            <a href="#projekt3">Projekt 3</a>
+          </li>
+           <li>
+            <a href="#projekt4">Projekt 4</a>
+          </li>
+          <li>
+            <a href="#form" data-toggle="modal" data-target="#ModalForm">Kontakt</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opcje
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Akcja 1</a>
+              </li>
+              <li>
+                <a href="#">Akcja 2</a>
+              </li>
+              <li>
+                <a href="#">Akcja 3</a>
+              </li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Linki</li>
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+
+  </nav>
+
+  <!-- Main container -->
+  <section id="main-page">
+    <div class="container">
+
+      <div class="jumbotron">
+        <h1>Programowanie w JAVASCRIPT</h1>
+        <div class="row">
+          <div class="col-md-2" align="left">
+            <p>nazwisko:</p>
+          </div>
+          <div class="col-md-4">
+            <p id="nazwisko">Kowalski</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" align="left">
+            <p>imię:</p>
+          </div>
+          <div class="col-md-4">
+            <p id="imie">Jan</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" align="left">
+            <p>grupa:</p>
+          </div>
+          <div class="col-md-4">
+            <p id="grupa">1</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" align="left">
+            <p>email:</p>
+          </div>
+          <div class="col-md-4">
+            <p id="email">999@student.pwsz.elblag.pl</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" align="left">
+            <p>nr indeksu:</p>
+          </div>
+          <div class="col-md-4">
+            <p id="nrIndeksu">999</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </section>
+  <!-- /container -->
+<!-- *******************************************projekt1************************************************* -->
+  <section id="projekt1">
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Projekt 1</h1>
+        <p>
+
+          
+          <script>
+            $(document).ready(function(){
+              $('#nazwisko').text('Rogulski');
+              $('#imie').text('Dominik');
+              $('#grupa').text('SN');
+              $('#email').text('18071@student.pwsz.elblag.pl');
+              $('#nrIndeksu').text('18071');
+            });
+          </script>
+
+        </p>
+        <p>Ab alio exspectes, alteri quod feceris - co zrobisz drugiemu, oczekuj od niego. </p>
+        <span class="pq">Ad multos annos! - wielu lat życia.</span>
+        Ad perpetuam rei memoriam - na wieczną rzeczy pamiątkę.
+        Accípere praestat quam inferre iniúriam – Lepiej doznawać krzywd, niż je wyrządzać.
+        <span class="pq">Ad impossibília nemo obligatur – Nikt nie jest zobowiązany do rzeczy niemożliwych.</span>
+        Aequum est peccatis veniam poscentem reddere rursus – Słusznie jest wybaczać winy proszącemu o wybaczenie. (Horatius)
+        <p>Aliena vítia in óculis habemus, a tergo nostra sunt – Cudze błędy mamy na oku, nasze poza nami. (Seneka)</p>
+        <p>Audi, vide, sile – Słuchaj, patrz i zachowaj milczenie.</p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet libero sollicitudin lorem faucibus scelerisque. Aliquam arcu ante, dignissim ac orci quis, venenatis venenatis ante. Mauris eu fermentum risus, nec facilisis nisi. Aliquam sed dolor sed felis imperdiet dignissim ac nec ex. Maecenas ac blandit ante. Cras risus nisi, vulputate eu semper vel, pretium eu libero. Sed quis nulla eu ligula varius blandit. Pellentesque accumsan mi sapien, in sollicitudin est finibus at. Fusce quis faucibus magna. Mauris pellentesque posuere orci a consequat. Donec maximus ipsum urna. Donec gravida magna id tincidunt tristique. Nam erat mi, sollicitudin sed turpis eget, hendrerit ullamcorper orci. Nullam mattis nunc eu massa porttitor, sit amet varius urna malesuada. Sed quis risus in leo porttitor rutrum in auctor arcu.
+        <script>
+
+          $(document).ready(function(){
+            $('span.pq').each(function(){
+              var quote = $(this).clone();
+              quote.removeClass('pq');
+              quote.addClass('pullquote');
+              $(this).before(quote);
+            });//each - END
+          });//ready - END
+
+        </script>
+      </div>
+    </div>
+  </section>
+<!-- *******************************************projekt2************************************************* -->
+
+  <section id="projekt2">
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Projekt 2</h1>
+        <p>Tutaj jest skrypt dwukliku</p>
+        <script>
+          $('body').dblclick(function(){
+            alert('Wykonano dwuklik')
+          });//body.dbclick -END
+        </script>
+      </div>
+    </div>
+  </section>
+<!-- *******************************************projekt3************************************************* -->
+<section id="projekt3">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Projekt 3</h1>
+      <p>Odnośniki: </p>
+      <a href="http://www.ryongnamsan.edu.kp/univ/" target="_blank" class="odn">Ryongnamsan</a></br>
+      <a href="https://www.dobreprogramy.pl" target="_blank" class="odn">Dobreprogramy</a></br>
+      <a href="https://www.bloomberg.com" target="_blank" class="odn">Bloomberg</a></br>
+      <a href="https://www.reuters.com" target="_blank" class="odn">Reuters</a></br>
+      <div id="ak"></div>
+
+      <script>
+        $(document).ready(function(){
+          $('.odn').mouseover(function(){
+            var message = "<p>Wskazałeś myszką odnośnik: "+ $(this).text() +"</p>";
+            $('#ak').append(message);
+          });//odn.hoover - END
+        });
+      </script>
+    </div>
+  </div>
+</section>
+<!-- *******************************************projekt4************************************************* -->
+<section id="projekt4">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Projekt 4</h1>
+      <p>Formularz</p>
+      <form">
+        <button type="button" id="btn1">Kliknij mnie</button>
+        <input type="button" value="Kliknij mnie" id="btn2"/></br></br>
+        <!--*************************************************-->
+        <input type="button" value="Przycisk 1" class="btnT"/>
+        <input type="button" value="Przycisk 2" class="btnT"/>
+        <input type="button" value="Przycisk 3" class="btnT"/>
+        <input type="button" value="Przycisk 4" class="btnT"/>
+        <input type="button" value="Przycisk 5" class="btnT"/></br>
+        <input type="button" value="Przycisk 6" class="btnT"/>
+        <input type="button" value="Przycisk 7" class="btnT"/>
+        <input type="button" value="Przycisk 8" class="btnT"/>
+        <input type="button" value="Przycisk 9" class="btnT"/>
+        <input type="button" value="Przycisk 10" class="btnT"/>
+      </form>
+      <div id="wynik"></div>
+
+      <script>
+        $(document).ready(function(){
+          $('#btn1').click(function(){
+            $(this).text("Zostałem kliknięty!");
+          });//btn1.click - END
+          $('#btn2').click(function(){
+            $(this).val("Zostałem kliknięty!");
+          });//btn2.click - END
+        });
+      </script>
+
+      <script>
+      $(document).ready(function(){
+        $('.btnT').click(function(){
+          var test = $(this).val();
+          var war = 'Przycisk ';
+          var i = 1;
+          var cssTab = [
+            '#projekt1', '#projekt2', '#projekt3', '#projekt4', 'p', 'body', '.pq', 'button', '#main-page', 'span'
+          ];
+
+          function cssP(x){
+            var vbl = 'b';
+            var tag = cssTab[x-1];
+            var cssW;
+
+            vbl = vbl+x;
+            $(tag).each(function(){
+              $(this).addClass(vbl);
+              cssW = $(this).css(["color", "font-family", "font-size", "background-color", "text-align"]);
+              $('#wynik').text("");
+              $('#wynik').append('</br><b>Zmieniono TAG:</b> '+ tag +' <b>na wartości: kolor</b> '+ cssW["color"] +' || <b>czcionka</b> '+ cssW["font-family"] +' || <b>rozmiar czcionki</b> '+ cssW["font-size"] +' || <b>kolor tła</b> '+ cssW["background-color"] +' || <b>pozycja tekstu</b> '+ cssW["text-align"]);
+            });
+            
+
+          }//f.ccsP - END
+          
+          if ($(this).val().length > 11){
+            $('#wynik').text("");
+            $('#wynik').append('</br>Przycisk już był kliknięty');
+            return;
+          }
+          while ((war+i) != test){
+            i++;
+          }
+          $(this).val("Nr. "+ i +" kliknięty");
+          cssP(i);
+          
+        });//btnT.click - END
+      });//document.ready - END
+      </script>
+    </div>
+  </div>
+</section>
+<!-- ******************************************************************************************** -->
+  <footer>
+    <div class="container" style="margin-top:5%">
+      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#myModal">
+        Polityka prywatności
+      </button>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Polityka prywatności</h4>
+        </div>
+        <div class="modal-body">
+          Panie jaka tam polityka...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-warning btn-sm" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Kontakt</h4>
+        </div>
+        <div class="modal-body">
+          <section id="form" style="margin-top: 5%">
+            <form action="index.html#kontakt" method="post" onsubmit="return checkForm();">
+              <fieldset>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="hide" id="errorName">Podanie imienia jest wymagane!</p>
+                  </div>
+                </div>
+                <div class="row" id="success">
+                  <div class="col-md-2" align="right">
+                    <label class="control-label" for="contactName">Imię</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control " id="contactName" aria-describedby="inputSuccess5Status" onblur="checkName()" />
+                    <span class="hide" aria-hidden="true" id="true"></span>
+                    <span id="inputSuccess5Status" class="sr-only">(success)</span>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="hide" id="errorLastName">Podanie nazwiska jest wymagane!</p>
+                  </div>
+                </div>
+                <div class="row" id="success2">
+                  <div class="col-md-2" align="right">
+                    <label class="control-label" for="contactLastName">Nazwisko</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control " id="contactLastName" aria-describedby="inputSuccess5Status" onblur="checkLastName()"
+                    />
+                    <span class="hide" aria-hidden="true" id="true2"></span>
+                    <span id="inputSuccess5Status2" class="sr-only">(success)</span>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="hide" id="errorEmail">Podanie emaila jest wymagane!</p>
+                    <p class="hide" id="errorEmail2">Błędny email!</p>
+                  </div>
+                </div>
+                <div class="row" id="success3">
+                  <div class="col-md-2" align="right">
+                    <label class="control-label" for="contactEmail">Email</label>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="form-control " id="contactEmail" aria-describedby="inputSuccess5Status" onblur="checkEmail()" />
+                    <span class="hide" aria-hidden="true" id="true3"></span>
+                    <span id="inputSuccess5Status3" class="sr-only">(success)</span>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-2" align="right">
+                    <label for="information">Informacje</label>
+                  </div>
+                  <div class="col-md-4">
+                    <textarea name="Informacje" cols="30" rows="7" id="Info" maxlength="250"></textarea>
+                  </div>
+                </div>
+                <br>
+                <div class="row ">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-3">
+                    <input class="btn btn-primary" type="submit" value="Wyślij" />
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-warning btn-sm" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  
+  <script>
+    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+
+</html>

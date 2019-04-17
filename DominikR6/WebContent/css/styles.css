@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 100%;
+    padding: 5px;
+    width: auto;
+}
+
+.logotext {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+
+#dashboard{
+    width: 112px;
+    background-color: rgb(110,138,195);
+    padding: 20px 20px 0 20px;
+    position: absolute;
+    left: -92px;
+    z-index: 100px;
+}
+
+#dashboard img{
+    margin-bottom: 20px;
+    border: 1px solid rgb(0,0,0);
+}

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.navbar-brand {
+    padding: 0px;
+}
+
+.navbar-brand>img {
+    height: 100%;
+    padding: 5px;
+    width: auto;
+}
+
+.logotext {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+
+.pullquote{
+    float: right;
+    clear: right;
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(255, 211, 224, 0.5);
+    border-radius: 10px;
+    margin: 20px 0 10px 10px;
+    font-style: italic;
+}
+
+.pq{
+    font-family: 'Ranga', cursive;
+    color: 404040;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #009196;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#ak{
+    font-family: 'Ranga', cursive;
+    font-style: bold;
+    color: red;
+}
+
+.b1{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    background-color: #404040;
+    text-align: right;
+}
+
+.b2{
+    color: black;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 24px;
+    background-color: #404100;
+    text-align: center;
+}
+
+.b3{
+    color: rgb(10, 107, 114);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    background-color: #26850e;
+    text-align: left;
+}
+
+.b4{
+    color: rgb(20, 31, 190);
+    font-family: 'Ranga', cursive;
+    text-align: center;
+    font-size: 18px;
+    background-color: #2cb5be;
+}
+
+.b5{
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 34px;
+    background-color: #991c1c;
+}
+
+.b6{
+    color: #404040;
+    font-family: 'Ranga', cursive;
+    text-align: center;
+    font-size: 15px;
+    background-color: #000000;
+}
+
+.b7{
+    color: rgb(13, 172, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    font-size: 34px;
+    background-color: #000000;
+}
+
+.b8{
+    color: rgb(255, 255, 255);
+    font-family: 'Ranga', cursive;
+    text-align: left;
+    font-size: 10px;
+    background-color: #831d1d;
+}
+
+.b9{
+    color: rgb(22, 145, 22);
+    font-family: 'Ranga', cursive;
+    text-align: center;
+    font-size: 34px;
+    background-color: #172fb8;
+}
+
+.b10{
+    color: rgb(19, 92, 134);
+    font-family: 'Ranga', cursive;
+    text-align: right;
+    font-size: 20px;
+    background-color: #5d1da5;
+}
